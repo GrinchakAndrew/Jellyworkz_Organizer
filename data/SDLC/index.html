@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+</head>
+<body>
+    <div class="wrapper" id="wrapper">
+        <div id="content">
+            <div id="leftbar"></div>
+            <div id="rightbar">
+                <!--the first slide index=0-->
+                <div class="slide-wrapper" index="0">
+                    <h2 class="firstHeading">Project Life-Cycle:</h2>
+                    <div class="hr"></div>
+                    <h3>JellyWorkz SDLC</h3>
+					<a href="#">
+						<div style="text-align: center;" id="JellyWorkz_SDLC"></div>
+						<span>Double-click the image to enlarge.</span>
+					</a>
+					<div class="hr"></div>
+                    <h3>Info Addendum</h3>
+                    <ul class="ul">
+                        <li style="list-style-type: none;">
+                            <table style="width: 100%;">
+                                <tbody>
+                                    <tr>
+                                        <td class="c52" colspan="6" rowspan="1">
+                                            <p class="c0"><span class="c1"></span></p>
+                                            <p class="c0"><span class="c1"></span></p>
+                                            <p class="c0"><span class="c1"></span></p>
+                                            <table cellpadding="0" cellspacing="0" class="c59">
+                                                <tbody>
+                                                    <tr class="c72">
+                                                        <td class="c63" colspan="1" rowspan="1">
+                                                            <p class="c3" style="text-align: center;"><span class="c35">
+										<a class="c56" href="data/SDLC/data/JellyWorkz_SDLC.pdf">View in PDF</a></span>
+                                                            </p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <p class="c0"><span class="c1"></span></p>
+                                            <p class="c0"><span class="c1"></span></p>
+                                            <p class="c0"><span class="c1"></span></p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div style="clear: both"></div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div class="wrapper">
+            <div style="float: left;" id="copyright">
+                <span>© 2016 CSS<br>
+			Your use of this software indicates you know JellyWorkz
+			<a href="#" style="text-decoration:underline;">Terms of Use</a><br>
+				No Terms Of Use
+			</span>
+            </div>
+            <div style="float: right;" id="contact">
+                <br> You can also visit the following <a href="http://grinchakandrew.github.io/organizer/"> website to learn more about pigs</a>
+                <br>
+                <br>
+            </div>
+            <br style="clear: both">
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        var instance = new Config({
+		
+			'JellyWorkz_SDLC' : {
+                'state': {
+                    'click': 0,
+                    'keyup': 0
+                },
+                '_config': null,
+                'src': "data/SDLC/images/JellyWorkz_SDLC.png",
+                'width': '90%',
+                'enlargeToWidth': 99,
+                'left': 0.5,
+            }
+        }, 'data/SDLC/data/slides.js');
+        /*interpolation of DOMReady Code:*/
+		instance.ani.deanimate(document.body);
+        instance.m.slidesCol = Array.prototype.slice.call(document.querySelectorAll('.slide-wrapper'), 0);
+        instance.m.buildMenu();
+		instance.ani.animate(document.body, 100, 0.03);
+        /* var prettyprintedElCol = document.querySelectorAll('.prettyprinted');
+        if (prettyprintedElCol.length) {
+            Array.prototype.forEach.call(prettyprintedElCol, function(i, j) {
+                i.removeAttribute('class');
+            });
+        }
+        prettyPrint(); */
+        instance.lastSlide = document.querySelector('.slide-wrapper:last-of-type') || document.querySelector('.slide-wrapper');
+        instance.slideIndex = "";
+        instance.slideIndexArray = [];
+        instance.scrollHandler = function(e) {
+            instance.lastSlide = document.querySelector('.slide-wrapper:last-of-type') || document.querySelector('.slide-wrapper');
+            instance.slideIndex = instance.lastSlide.getAttribute('index');
+            instance.lastSlideOffsetTop = instance.lastSlide.offsetTop;
+
+            if (instance.slideIndex && (~~instance.slideIndexArray.indexOf(instance.slideIndex) || !instance.slideIndexArray.length)) {
+                if (instance.lastSlide && (window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop) + 10 >= (window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop) / 2) {
+                    instance.slideIndexArray.push(instance.slideIndex);
+                    instance.p();
+                }
+            }
+            instance.m.slide(100);
+        };
+		var clickHandler = function(e){
+			var event = e || event,
+			target = event.target || event.srcElement,
+			_config;
+			
+			if (instance.c(e.target, 'TABLE', 'slide')) {
+				_config = !instance.instance ? new instance.F(target, instance.e, instance.g, instance.s, instance.u) : instance.instance;
+				_config.o(instance.c(e.target, 'TABLE', 'slide'));
+			}
+			if (e.target.tagName == 'IMG') {
+				_config = !instance.instance ? new instance.F(target, instance.e, instance.g, instance.s, instance.u) : instance.instance;
+				_config.o(target);
+			}
+		};
+		instance.clickHandler = function(e) {
+            var clickCount = 0, timeout; 
+				return function(e){
+					clickCount++;
+					switch(clickCount){
+						case 1: {
+							timeout = setTimeout(function(){clickCount = 0;}, 450);
+							break;
+						}
+						case 2: {
+							clickCount = 0;
+							clearTimeout(timeout);
+							clickHandler(e);
+							console.log(2);
+							break;
+						}
+					}
+				}
+        };
+        instance.e(document, 'scroll', instance.scrollHandler);
+        instance.setImgs();
+        instance.e(document, instance.ani.mousewheelEvt, instance.ani.handler);
+        instance.e(document, 'keyup', instance.ani.handler);
+        instance.e(document, 'mousedown', instance.ani.handler);
+        instance.e(document, 'touchend', instance.ani.handler);
+        instance.e(document, 'click', instance.clickHandler());
+        instance.e(document, 'touchstart', instance.clickHandler());
+	/*listening to .title onclick event to unsubscribe from DOM handlers per loaded item:*/
+        $(document).on('instance.u', function() {
+            if (instance) {
+				instance.u(document, 'click', instance.clickHandler);
+                instance.u(document, 'keyup', instance.ani.handler);
+                instance.u(document, 'mousedown', instance.ani.handler);
+                instance.u(document, 'touchend', instance.ani.handler);
+                instance.u(document, 'click', instance.ani.handler);
+                instance.u(document, 'scroll', instance.scrollHandler);
+                instance.u(document, instance.ani.mousewheelEvt, instance.ani.handler);
+				if($('.header').find('.breadcrumb').length < 1) {
+					$('.header').append($('.columniser-text').has('.breadcrumb'));
+					console.log('artisansInATeam -> ');
+				}
+                $('#stickingMenu').remove();
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<div style="margin-left: auto; margin-right: auto; border: 1px solid white;">
+        <table style="border: 2px; margin-left: auto; margin-right: auto; font-size: 16px;">
+            <tbody>
+                <tr>
+                    <th valign="middle" style="height: 2em; font-weight: bold; border: 1px solid white; text-align: center; color:#900000; padding: 1px;   vertical-align: middle;">Project Flow Description:</th>
+                </tr>
+                <tr>
+                </tr>
+            </tbody>
+        </table>
+</div>
+<div style="margin-left: auto; margin-right: auto; height: 2em; font-size: 16px; color: #333399;   text-align: center;">
+        <div style="margin-top: 0.5em;">Steps into Project Life-Cycle Explained</div>
+</div>
+<div style="margin-left: auto; margin-right: 0 auto; border: 1px solid #6690BC; text-align: center;"><span style="text-align: center; line-height: 30px; color: #6690bc; font-size: 17px;">Project Breakdown</span>
+
+<table style="width: 100%; margin: 0 auto; border-collapse: collapse; border: 1px solid #fff;">
+                            <tbody>
+                                <tr>
+                                    <th style="border-right: 1px solid #FFF; text-align: center; background-color: #EEE; color: #000; padding: 2pt;" valign="middle"><strong>#</strong>
+                                    </th>
+                                    <th style="border-right: 1px solid #FFF; text-align: center; background-color: #EEE; color: #000; padding: 2pt;" valign="middle"><strong>Name of the Step</strong>
+                                    </th>
+                                    <th style="border-right: 1px solid #FFF; text-align: center; background-color: #EEE; color: #000; padding: 2pt;" valign="middle"><strong>Description</strong>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td style="border-right: 1px solid #EEE; padding: 7pt; text-align: center;">1</td>
+                                    <td style="border-right-width: 1px; border-right-style: solid; border-right-color: #EEE; padding:10pt; text-align: center;">
+                                        Pre-payment: 
+                                    </td>
+                                    <td style="word-break: break-all; border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;">
+									"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+									</td>
+                                </tr>
+								<tr>
+                                    <td style="border-right: 1px solid #EEE; padding: 7pt; text-align: center;">1</td>
+                                    <td style="border-right-width: 1px; border-right-style: solid; border-right-color: #EEE; padding:10pt; text-align: center;">
+                                        Estimations begin: 
+                                    </td>
+                                    <td style="word-break: break-all; border-right-width: 1px; border-right-style: solid; border-right-color: #fff; padding: 5pt; text-align: center;">
+									"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+									</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+</div>
+
