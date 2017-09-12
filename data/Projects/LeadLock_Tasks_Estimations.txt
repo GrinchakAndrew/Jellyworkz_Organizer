@@ -39,7 +39,7 @@
 		$(document).ready(function() {
             $('#classes').sheetrock({
                 url: spreadsheet,
-                query: "select A, B, D, F where A is not null",
+                query: "select A, B, C, D, E, F, G where A is not null",
                 labels: ['Tasks', 'PHP Min', 'PHP Max', 'iOS Min', 'iOS Max', 'Android Min', 'Android Max'],
                 callback: function(a, b, c) {
 					console.log(a, b, c);
