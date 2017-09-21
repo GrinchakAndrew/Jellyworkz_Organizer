@@ -21,11 +21,12 @@
 				  
 	" Projects" : [
 					{"Estimatates and Docs " : [
-													{"LeadLock" : 
+													{"Tisar Scenarios" : 
 														{
-														"(1) LeadLock Breakdown" : "data/Projects/LeadLock_Tasks_Estimations.txt"
+														"(1) Tisar Brief" : "data/Projects/Tisar/UI.html"
 														}
 													}
+													
 												]
 					}
 				  ]			  

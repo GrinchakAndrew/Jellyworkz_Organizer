@@ -1,0 +1,80 @@
+<div class="slide-wrapper" index="5">
+					<div class="hr"></div>
+					<h3>Inside a factory</h3>
+					<ul class="ul">
+						<li style="list-style-type: none;">
+							<table class="slide" style="width: 100%;">
+								<tbody>
+										<tr>
+											<td class="c52" colspan="6" rowspan="1">
+												<p class="c6 c49"><span class="c24 c48"></span></p>
+											</td>
+										</tr>
+										<td class="c52" colspan="6" rowspan="1">
+											<ul class="ul-slide">
+													<li style="list-style-type: none;">
+							<table class="slide" style="width: 100%;">
+								<tbody>
+										<tr>
+											<td class="c52" colspan="6" rowspan="1">
+												<p class="c6 c49"><span class="c24 c48"></span></p>
+											</td>
+										</tr>
+										<tr>
+											<td class="c52 c31" colspan="6" rowspan="1">
+												<h1><span class="c68">Sub-factory component clickable (inside a factory):</span></h1>
+												<div></div>
+											</td>
+										</tr>
+										<tr>
+											<td class="c52" colspan="6" rowspan="1">
+											<div style="text-align: center;" id="Tisar_inside_a_factory"></div>
+											<ul class="ul-slide">
+											<li>
+											<b>General Description</b> : </br>
+											<b> Component </b> : <a href="https://docs.google.com/presentation/d/1MJFHqr-oCgqbRkkYuvYGpAyDUCA0y4wGnWUfK0EYjzk/edit#slide=id.g251c6dc7dd_0_247">Sub-factory component</a>
+											
+											</br>
+											 		- Searching by status of machines or by name or by serial number</br>
+													- Search-filtering machines -> next component</br>
+													- Dropdown date: month, years</br>
+											
+											<b>Scenario</b>: Sorting by Date Selection (should be only months, not a full date)</br>
+											<b>Given</b> : user applied the Date Filter </br>
+											<b>And</b> : the selection of a month and year took place to go back in time</br>
+											<b>When</b> : the selection dropdown is set to new date (month and a year)</br>
+											<b>Then</b> : the filtering takes place </br>
+											<b>And</b> : the 'Inside a Factory' component is refreshed to the filtered view</br></br>
+											
+											<b>Scenario</b>: Sorting by Machine Status (Filter only by Broken Machines)</br>
+											
+											<b>Given</b> : user applied the Filter by Machine Status </br>
+											<b>When</b> : the selection dropdown is set to the status of a Machine, e.g., 'Broken'</br>
+											<b>Then</b> : the filtering takes place </br>
+											<b>And</b> : the 'Inside a Factory' component is refreshed to the filtered view</br></br>
+
+											<b>Scenario</b> : Sort-filtering by All Machines</br>
+											
+											<b>Given</b> : user applied the Filter by 'All Machines' </br>
+											<b>When</b> : the corresponding option on the header has been click-selected</br>
+											<b>Then</b> : the filtering takes place </br>
+											<b>And</b> : the 'Inside a Factory' component is refreshed to the filtered view: All of the Machines under the given Factory populate the component's view. </br></br>
+											
+											<b>Scenario</b>: Editing status of a machine: </br>
+											
+											NB! IT IS NOT POSSIBLE TO CHANGE THE STATUS OF MACHINES FROM THE APPLICATION, ONLY FROM THE WEBSITE (ADMIN PANEL)</br>
+											NB! Editing status of a machine: only possible while the month is not over yet. </br>
+											
+											<b>Given</b> : the targeted machine is viewed within the current monthly</br>
+											<b>And</b> : the machine is not viewed under the 'Notification' option</br>
+											<b>When</b> : Admin Logs in to Edit machine status from the Admin Panel</br>
+											<b>Then</b> : all of the changes are brought up to date inside the application</br></br>
+											</li>
+											<br/>
+											</ul>
+										</td>
+								</tbody>
+							</table>
+						</li>
+					</ul>
+				</div>
