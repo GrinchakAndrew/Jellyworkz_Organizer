@@ -142,8 +142,39 @@
             padding: 0
         }
 		
-/* 		li {
-			padding-bottom: 5px;
+		
+		
+		
+		tr.c72 > td.c63	{
+			    border-right-style: solid;
+				padding: 5pt 5pt 5pt 5pt;
+				border-bottom-color: #ffffff;
+				border-top-width: 0pt;
+				border-right-width: 0pt;
+				border-left-color: #ffffff;
+				vertical-align: middle;
+				border-right-color: #ffffff;
+				border-left-width: 0pt;
+				border-top-style: solid;
+				border-left-style: solid;
+				border-bottom-width: 0pt;
+				width: 700px;
+				border-top-color: #ffffff;
+				border-bottom-style: solid;
+				color : white;
 		}
- */        
-        
+		
+		tr.c72 > td.c63	p {
+			width : 150px;
+			margin: 0 auto;
+			background-color: #9900ff;
+			padding: 15px;
+		}
+		
+		tr.c72 > td.c63	p > span > a {
+			text-decoration : none;
+			color : white;
+			font-size : 19px;
+		}
+		
+		

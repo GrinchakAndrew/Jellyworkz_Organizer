@@ -1,4 +1,8 @@
-
+		tbody >tr:last-child {
+			font-weight : bold; 
+		}
+		
+		
 		h3 ~ a[href="#"] ~ div[class="hr"] {
 			margin-top : 30px;
 		}
@@ -67,9 +71,9 @@
 			font-size: 16px;
 		}
 		
-        table[style*="width: 100%;"] tr:nth-child(odd) {
+        /* table[style*="width: 100%;"] tr:nth-child(odd) {
             background-color: #EEE;
-        }
+        } */
         
         table[style*="width: 100%;"] th {
             line-height: 2em;
