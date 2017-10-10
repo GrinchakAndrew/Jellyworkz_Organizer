@@ -25,6 +25,12 @@
 														{
 														"(1) Tisar Brief" : "data/Projects/Tisar/UI.html"
 														}
+													},
+													
+													{"CRM Easy2Give Mobile App" : 
+														{
+														"(1) CRM Easy2Give Mobile App Brief" : "data/Projects/Agents_CRM_Easy2Give_Mobile/UI.html"
+														}
 													}
 													
 												]
