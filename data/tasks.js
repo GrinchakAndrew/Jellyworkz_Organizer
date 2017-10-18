@@ -31,8 +31,13 @@
 														{
 														"(1) CRM Easy2Give Mobile App Brief" : "data/Projects/Agents_CRM_Easy2Give_Mobile/UI.html"
 														}
-													}
+													},
 													
+													{"DiamondGirl Scenarios" : 
+														{
+														"(1) DiamondGirl Brief" : "data/Projects/DiamondGirl/UI.html"
+														}
+													}
 												]
 					}
 				  ]			  

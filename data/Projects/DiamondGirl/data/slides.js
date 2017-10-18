@@ -1,0 +1,28 @@
+{
+	"collection" : ["data/Projects/DiamondGirl/data/slide1.html",
+					"data/Projects/DiamondGirl/data/slide2.html",
+					"data/Projects/DiamondGirl/data/slide3.html",
+					"data/Projects/DiamondGirl/data/slide4.html",
+					"data/Projects/DiamondGirl/data/slide5.html",
+					"data/Projects/DiamondGirl/data/slide6.html",
+					"data/Projects/DiamondGirl/data/slide7.html",
+					"data/Projects/DiamondGirl/data/slide8.html",
+					"data/Projects/DiamondGirl/data/slide9.html",
+					"data/Projects/DiamondGirl/data/slide10.html", 
+					"data/Projects/DiamondGirl/data/slide11.html", 
+					"data/Projects/DiamondGirl/data/slide12.html", 
+					"data/Projects/DiamondGirl/data/slide13.html", 
+					"data/Projects/DiamondGirl/data/slide14.html", 
+					"data/Projects/DiamondGirl/data/slide15.html", 
+					"data/Projects/DiamondGirl/data/slide16.html", 
+					"data/Projects/DiamondGirl/data/slide17.html", 
+					"data/Projects/DiamondGirl/data/slide18.html",
+					"data/Projects/DiamondGirl/data/slide19.html",
+					"data/Projects/DiamondGirl/data/slide20.html",
+					"data/Projects/DiamondGirl/data/slide21.html",
+					"data/Projects/DiamondGirl/data/slide22.html",
+					"data/Projects/DiamondGirl/data/slide23.html",
+					"data/Projects/DiamondGirl/data/slide24.html",
+					"data/Projects/DiamondGirl/data/slide25.html"
+					]
+}
