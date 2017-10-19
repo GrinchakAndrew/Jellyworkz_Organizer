@@ -20,9 +20,53 @@
 											<td class="c52" colspan="6" rowspan="1">
 												<div id="twenty" style="text-align : center;"></div>
 												<ul class="ul-slide">
-												<li>
-												</li>
-												<br/>
+												<li>	
+												<b>As </b> : Sales Agent, who is logged in to Admin Panel<br/>
+												<b>I Want to</b>: Share a Lead to Social Network manually or automatically<br/>
+												<b> So that </b> : I am able to track daily reports of my shares in the Admin Panel<br/>
+												<b> And  </b> : monitor the shared Leads over today's status <br/>
+											</li>
+											<br/>
+											<li>	
+												<b>Scenario </b> : Automatic sharing to Social Networks<br/>
+												<b>Given</b>: Sales Agent has automatically shared a Lead to any of the applicable social networks [iconized]<br/>
+												<b>When</b> : The Sharing is successfull<br/>
+												<b>Then</b> : on the dashboard of the Sales Agent, the following information should be updated:<br/>
+													- Creation Date<br/>
+													- Social Network<br/>
+													- Item Price<br/>
+													- Item Category <br/>
+													- Product Name <br/>
+													- Model <br/>
+												<b>And</b> : the following information should be filled in manually: <br/>
+													- Link to Post <br/>
+													- Link to Group <br/>
+													- Comments <br/>
+													- Shares <br/>
+													- Views <br/>
+													- Likes <br/>
+											</li>
+											<br/>
+											<li>	
+												<b>Scenario </b> : Manually adding Shared Post information to database:<br/>
+												<b>Given</b>: Sales Agent manually shared a Lead to any of the applicable social networks, he is logged in and is on the dashboard view<br/>
+												<b>When</b> : Social Network is selected <br/>
+												<b>Then</b> : The following Post Details should be selected\filled in:<br/>
+													- Group [if sharing is done to a group]<br/>
+													- Group link \ name<br/>
+													- Link to post<br/>
+													- Link to post<br/>
+													- Amount of Likes<br/>
+													- Amount of Views<br/>
+													- Amount of Shares<br/>
+													- Amount of Comments<br/>
+												<b>And</b> : The following Product Details should be selected\filled in:<br/>
+													- Category<br/>
+													- Item Name<br/>
+													- Model<br/>
+													- Price<br/>
+											</li>
+											<br/>
 												</ul>	
 											</td>
 										</tr>
