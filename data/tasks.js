@@ -37,6 +37,12 @@
 														{
 														"(1) DiamondGirl Brief" : "data/Projects/DiamondGirl/UI.html"
 														}
+													}, 
+													
+													{"PEManager" : 
+														{
+														"(1) PEManager Brief" : "data/Projects/PEManager/UI.html"
+														}
 													}
 												]
 					}
