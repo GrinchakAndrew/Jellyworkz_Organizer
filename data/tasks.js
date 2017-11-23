@@ -33,9 +33,10 @@
 														}
 													},
 													
-													{"DiamondGirl Scenarios" : 
+													{"D-Friends Scenarios" : 
 														{
-														"(1) DiamondGirl Brief" : "data/Projects/DiamondGirl/UI.html"
+														"(2) D-Friends_Tasks_Estimations" : "data/Projects/D-Friends/D-Friends_Tasks_Estimations.txt",
+														"(1) D-Friends Brief" : "data/Projects/D-Friends/UI.html"
 														}
 													}, 
 													
