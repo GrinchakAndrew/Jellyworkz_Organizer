@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">	
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>CookStream</title>
+    <script type="text/javascript" src="js/sheetrock.min.js"></script>
+    <link rel="stylesheet" href="js/bootstrap.min.css">
+	<script type="text/javascript" src="js/Chart.js"></script>
+	 <script type="text/javascript" src="js/Chart.PieceLabel.min.js"></script>
+    <style>
+        table td:not(:first-child) {
+            text-align: center;
+            min-width: 150px;
+        }
+
+        table th {
+            text-align: center;
+        }
+
+        table {
+            margin-top: 25px;
+        }
+		
+		.canvas_wrapper {
+			width : 300px;
+			height : 300px;
+			display: inline-block;
+		}
+		.canvas_wrapper_container{
+			width: 50%;
+			margin: 0 auto;
+		}
+		
+    </style>
+    <script type="text/javascript">
+        var spreadsheet = "https://docs.google.com/spreadsheets/d/1obNAv3xJx_WY3rNG9FzOUNeyvKEkUvXEdPqsiryiwQ8/edit#gid=2147263344";
+		
+		$(document).ready(function() {
+			var target = document.getElementById('classes');			 
+			// create an observer instance
+			var observer = new MutationObserver(function(mutations) {
+			  mutations.forEach(function(mutation) {
+				if(mutation.type == 'childList'){
+					var tdCol = document.querySelectorAll('tr:not(:nth-child(1)) td');
+					Array.prototype.forEach.call(tdCol, function(i, j) {
+						var content = i.innerHTML;
+						content = content.match(/.*[:-].*/g);
+						if(content && content.length) {
+							i.innerHTML = "";
+							content.forEach(function(x, z) {
+								var textEl = document.createElement('text');
+									textEl.innerHTML = x;
+									i.appendChild(textEl);
+									i.appendChild(document.createElement('br'));
+							});
+						}
+					});
+				}
+			  });    
+			});
+			// configuration of the observer:
+			var config = { attributes: true, childList: true, characterData: true };
+			// pass in the target node, as well as the observer options
+			observer.observe(target, config);
+			// later, you can stop observing
+			
+			
+            $('#classes').sheetrock({
+                url: spreadsheet,
+                query: "select A, B, C where A is not null",
+                labels: ['Tasks', 'PHP', 'Front-end'],
+                callback: function(a, b, c) {
+					console.log(a, b, c);
+				/* var ctx = document.getElementById("myChart").getContext('2d');
+				var ctx2 = document.getElementById("myChart2").getContext('2d');
+				ctx.canvas.width = 300;
+				ctx.canvas.height = 300;
+				ctx2.canvas.width = 300;
+				ctx2.canvas.height = 300; 
+				
+				var timeout = setTimeout(function(){
+				
+					var data = {
+						fe : c.rows[0]['labels'].indexOf('Front-end'),	
+						be : c.rows[0]['labels'].indexOf('Back-end')
+					};
+					
+					var fe = c.rows.map(function(i, j, arr) {
+						if(j !== 0 && j < arr.length -2 && i['cellsArray'][data.fe]) {
+							return i['cellsArray'][data.fe];
+						 }else {
+						   return 0;
+						 }
+					});
+					var fe_num_of_tasks = fe.filter(function(val, index, arr){
+							return val > 0 && index < arr.length-2;
+						}).length;
+					
+					fe = fe.reduce(function(sum, val, index, arr){
+							return sum + parseFloat(val);
+					}, 0);
+					
+					var be = c.rows.map(function(i, j, arr) {
+						if(j !== 0 && j < arr.length -2 && i['cellsArray'][data.be]) {
+							return i['cellsArray'][data.be];
+						 }else {
+						   return 0;
+						 }
+					});
+					
+					var be_num_of_tasks = be.filter(function(val, index, arr){
+							return val > 0 && index < arr.length-2;
+						}).length;
+					
+					be = be.reduce(function(sum, val) {
+						return sum + parseFloat(val);
+					}, 0)
+					
+                    var myChart = new Chart(ctx, {
+                        type: 'bar',
+                        data: {
+                            labels: ["Front-end", "Back-end"],
+                            datasets: [{
+                                label: ['# of Hours'],
+                                data: [fe, be],
+                                backgroundColor: [
+                                    'rgba(75, 192, 192, 0.2)',
+									 'rgba(255, 206, 86, 1)'
+                                ],
+                                borderColor: [
+                                    'rgba(75, 192, 192, 1)',
+									 'rgba(255, 206, 86, 1)'
+                                ],
+                                borderWidth: 1
+                            }]
+                        },
+                        options: {
+							responsive: true,
+							maintainAspectRatio: true,
+                            scales: {
+                                yAxes: [{
+                                    ticks: {
+                                        beginAtZero: true
+                                    }
+                                }]
+                            }, 
+							animation: {
+								animateScale: true,
+								animateRotate: true
+							}
+                        }
+                    });
+					
+					var myChart2 = new Chart(ctx2, {
+                        type: 'pie',
+                        data: {
+                            labels: ["Front-end", "Back-end"],
+                            datasets: [{
+                                label: '# of Tasks',
+                                data: [be_num_of_tasks, fe_num_of_tasks],
+                                backgroundColor: [
+                                    'rgba(75, 192, 192, 0.2)',
+									 'rgba(255, 206, 86, 1)'
+                                ],
+                                borderColor: [
+                                    'rgba(75, 192, 192, 1)',
+									 'rgba(255, 206, 86, 1)'
+                                ],
+                                borderWidth: 1
+                            }]
+                        },
+                        options: {
+							responsive: true,
+							maintainAspectRatio: true,
+							animation: {
+								animateScale: true,
+								animateRotate: true
+							}, 
+							pieceLabel: {
+							mode: 'percentage',
+							precision: 1,
+							fontColor: '#000000', 
+							arc: false
+						  }
+                        }
+                    });
+					
+					}, 1000); */
+				}
+            });
+			
+			
+			
+        });
+    </script>
+</head>
+<body>
+	<!-- <div class="canvas_wrapper_container">
+	<div class="canvas_wrapper">
+		<canvas id="myChart"></canvas>
+	</div>
+	<div class="canvas_wrapper">
+		<canvas id="myChart2"></canvas>
+	</div>
+	</div> -->
+	
+    <table id="classes" class="table-responsive table-bordered table-striped"></table>
+</body>
+
+</html>

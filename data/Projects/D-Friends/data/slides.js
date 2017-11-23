@@ -1,0 +1,27 @@
+{
+	"collection" : ["data/Projects/D-Friends/data/slide1.html",
+					"data/Projects/D-Friends/data/slide2.html",
+					"data/Projects/D-Friends/data/slide3.html",
+					"data/Projects/D-Friends/data/slide4.html",
+					"data/Projects/D-Friends/data/slide5.html",
+					"data/Projects/D-Friends/data/slide6.html",
+					"data/Projects/D-Friends/data/slide7.html",
+					"data/Projects/D-Friends/data/slide8.html",
+					"data/Projects/D-Friends/data/slide9.html",
+					"data/Projects/D-Friends/data/slide10.html", 
+					"data/Projects/D-Friends/data/slide11.html", 
+					"data/Projects/D-Friends/data/slide12.html", 
+					"data/Projects/D-Friends/data/slide13.html", 
+					"data/Projects/D-Friends/data/slide14.html", 
+					"data/Projects/D-Friends/data/slide15.html", 
+					"data/Projects/D-Friends/data/slide16.html", 
+					"data/Projects/D-Friends/data/slide17.html", 
+					"data/Projects/D-Friends/data/slide18.html",
+					"data/Projects/D-Friends/data/slide19.html",
+					"data/Projects/D-Friends/data/slide20.html",
+					"data/Projects/D-Friends/data/slide21.html",
+					"data/Projects/D-Friends/data/slide22.html",
+					"data/Projects/D-Friends/data/slide23.html",
+					"data/Projects/D-Friends/data/slide24.html"
+					]
+}
